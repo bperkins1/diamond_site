@@ -1,0 +1,11 @@
+paypal form for grading app
+entire form for cutting app
+  submission handling
+
+
+questions
+where does book paypal form go
+where does application forms go
+where do application paypal payments go
+colored diamond investment redirects to aidc advantage?
+diamond consultation service - should it go in navbar?
