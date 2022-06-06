@@ -5,9 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>American Institute of Diamond Cutting</title>
-  <link href="C:/Users/Billy/webdev/diamond_migration/diamond_site/styles/styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="C:/Users/Billy/webdev/diamond_migration/diamond_site/bootstrap-5.2.0-beta1-dist/css/bootstrap.css">
+<link href="C:/Users/Billy/webdev/diamond_migration/diamond_site/styles/styles.css" rel="stylesheet">
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> -->
 </head>
 
 <body>
@@ -60,10 +61,10 @@
             <a class="nav-link" href="C:/Users/Billy/webdev/diamond_migration/diamond_site/enroll-online/enroll.html">Enroll Online</a>
           </li>
         </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+
+
+
+
       </div>
     </div>
   </nav>
@@ -113,7 +114,7 @@
 
 
 
-    <form class="row border rounded">
+    <form class="row border rounded g-3 p-5">
       <p class="h4 text-center">Section A</p>
       <p class="h5">Name</p>
       <div class="col-md-4">
@@ -153,7 +154,6 @@
         <label for="inputCountry" class="form-label">Country</label>
         <select class="form-select bfh-countries" data-country="US" id="inputCountry">
           <option value="US">United States</option>
-          <option value=""></option>
           <option value="AF">Afghanistan</option>
           <option value="AL">Albania</option>
           <option value="DZ">Algeria</option>
@@ -655,15 +655,7 @@
         </select>
       </div>
 
-      <div class="col-md-6">
-        <label for="inputGender" class="form-label">Gender</label>
-        <select class="form-select" id="inputGender">
-          <option value="M">Male</option>
-          <option value="F">Female</option>
-          <option value="AF">Other</option>
-          <option value="AL">Prefer not to answer</option>
-        </select>
-      </div>
+
 
       <div class="col-md-6">
         <label for="inputDOB" class="form-label">Date of Birth</label>
@@ -709,7 +701,7 @@
         <label for="inputHighState" class="form-label">Country/State</label>
         <input type="text" class="form-control" id="inputHighState">
       </div>
-      <p class="fw-bold">College or institution of higher learning attended (leave blank if none):</p>
+      <p class="fw-bold mt-5">College or institution of higher learning attended (leave blank if none):</p>
       <div class="col-12">
         <label for="CollegeName" class="form-label">Name</label>
         <input type="text" class="form-control" id="CollegeName">
@@ -738,7 +730,7 @@
         <textarea class="form-control" id="inputSpecial"></textarea>
       </div>
 
-      <p class="fw-bold">College or institution of higher learning attended (2):</p>
+      <p class="fw-bold mt-5">College or institution of higher learning attended (2):</p>
       <div class="col-12">
         <label for="CollegeName2" class="form-label">Name</label>
         <input type="text" class="form-control" id="CollegeName2">

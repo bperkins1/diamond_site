@@ -1,21 +1,46 @@
+
+
 footer {
   padding-top: 5%;
   background-color: #f5f1ed;
 }
 
+/* ul {
+  list-style-type: none
+} */
+
+/* li {
+  display: grid;
+  grid-template-columns: 20px auto;
+  justify-content: start;
+  align-items: center;
+}
+
+li::before {
+  content: ">";
+  font-size: 10px;
+  color: black;
+} */
+
+
+.horizontal-line {
+  margin-top: 10px;
+}
 
 /* fix navbar overtaking content issue and give space between footer and body */
 .top {
-  padding-top: 100px;
+  padding-top: 70px;
   padding-bottom: 40px;
 }
 
 .container {
-  margin-left: 200px;
-  margin-right: 200px;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
-
+.row {
+  margin: 2.5% 0;
+}
 
 
 .grey-section {
