@@ -1,27 +1,21 @@
 
 
+a {
+  text-decoration: none;
+}
+
 footer {
   padding-top: 5%;
   background-color: #f5f1ed;
 }
 
-/* ul {
-  list-style-type: none
-} */
-
-/* li {
-  display: grid;
-  grid-template-columns: 20px auto;
-  justify-content: start;
-  align-items: center;
+li:not(nav *) {
+  margin: 0.5rem 0;
 }
 
-li::before {
-  content: ">";
-  font-size: 10px;
-  color: black;
-} */
-
+.navbar {
+  background-color: #000080;
+}
 
 .horizontal-line {
   margin-top: 10px;
@@ -52,6 +46,193 @@ li::before {
   background-color:#f5f5f5;
 
 }
+
+.extra-top-margin {
+  margin-top: 2.5%;
+}
+
+.accordion-body > img {
+  margin-bottom: 3%;
+}
+.accordion-body > a {
+  margin-top: 3%;
+}
+
+
+
+
+
+/* MODAL */
+
+
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 1%; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+
+  margin-left: 75%;
+  color: #f1f1f1;
+  font-size: 80px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+/* .accordion-button:not(.collapsed)::after {
+  filter: brightness(0%);
+} */
+/* .accordion-button:focus{
+  box-shadow: none;
+} */
+
+
+
+
+/*   list-style-position: inside;
+ */
+
+/*
+.dropdown-menu {
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  columns: 2;
+
+} */
+
+/* ul {
+  list-style-type: none
+}
+
+li {
+  display: grid;
+  grid-template-columns: 20px auto;
+  justify-content: start;
+  align-items: center;
+}
+
+li::before {
+  content: ">";
+  font-size: 1rem;
+  color: #999;
+} */
+
+/* ul {
+  position: relative;
+  list-style: none;
+} */
+
+/* li::before {
+  content: '▶'; */
+  /* position: absolute;
+  left: 0; */
+
+
+/* ul {
+  list-style-image: url("C:/Users/Billy/webdev/diamond_migration/diamond_site/images/arrow3.svg");
+} */
+
+/* lato sans serif */
+
+/* .dropdown-menu {
+  background-color: #000080;
+  color: white;
+
+}
+.dropdown-item {
+  color: white;
+} */
+
+/* .btn-dark {
+  background-color: #000080;
+} */
+
+/*  */
+/* ul {
+  list-style-type: none
+} */
+
+/* li {
+  display: grid;
+  grid-template-columns: 20px auto;
+  justify-content: start;
+  align-items: center;
+}
+
+li::before {
+  content: ">";
+  font-size: 10px;
+  color: black;
+} */
+
+
+
+
+
 /* #bottom {
   background-color: #373b44;
 } */
