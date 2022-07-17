@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>American Institute of Diamond Cutting</title>
   <link rel="stylesheet" href="/bootstrap-5.2.0-beta1-dist/css/bootstrap.css">
-<link href="/styles/styles.css" rel="stylesheet">
+  <link href="/styles/styles.css" rel="stylesheet">
 
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> -->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> -->
 </head>
 
 <body>
@@ -22,10 +22,10 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
+      <div class="collapse navbar-collapse" name="" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle show" href="#" id="dropdown04" data-bs-toggle="dropdown" aria-expanded="true">Education</a>
+            <a class="nav-link dropdown-toggle show" href="#" name="" id="dropdown04" data-bs-toggle="dropdown" aria-expanded="true">Education</a>
 
             <ul class="dropdown-menu bg-dark" aria-labelledby="dropdown04" data-bs-popper="static">
               <li><a class="dropdown-item text-primary fw-bold" href="/education/rough-diamond-grading-program.html">Rough Diamond Grading Program</a></li>
@@ -35,7 +35,7 @@
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle show" href="#" id="dropdown04" data-bs-toggle="dropdown" aria-expanded="true">Services</a>
+            <a class="nav-link dropdown-toggle show" href="#" name="" id="dropdown04" data-bs-toggle="dropdown" aria-expanded="true">Services</a>
             <ul class="dropdown-menu bg-dark" aria-labelledby="dropdown04" data-bs-popper="static">
               <li><a class="dropdown-item text-primary fw-bold" href="/services/white-diamond-purchases.html">White Diamond Purchases</a></li>
               <li><a class="dropdown-item text-primary fw-bold" href="http://aidcadvantage.com">Colored Diamond Investment</a></li>
@@ -48,7 +48,7 @@
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle show" href="#" id="dropdown04" data-bs-toggle="dropdown" aria-expanded="true">Books</a>
+            <a class="nav-link dropdown-toggle show" href="#" name="" id="dropdown04" data-bs-toggle="dropdown" aria-expanded="true">Books</a>
             <ul class="dropdown-menu bg-dark" aria-labelledby="dropdown04" data-bs-popper="static">
               <li><a class="dropdown-item text-primary fw-bold" href="/books/new-and-expanded.html">NEW AND EXPANDED EDITION OF ROUGH DIAMONDS, A PRACTICAL GUIDE</a></li>
               <li><a class="dropdown-item text-primary fw-bold" href="/books/rough-diamonds-practical.html">ROUGH DIAMONDS, A PRACTICAL GUIDE</a></li>
@@ -114,45 +114,45 @@
 
 
 
-    <form class="row border rounded g-3 p-5">
+    <form class="row border rounded g-3 p-5" enctype="multipart/form-data" method="POST" action="app-handler.php">
       <p class="h4 text-center">Section A</p>
       <p class="h5">Name</p>
       <div class="col-md-4">
         <label for="inputFirstName" class="form-label">First</label>
-        <input type="text" class="form-control" id="inputFirstName">
+        <input type="text" maxlength="80" class="form-control" name="inputFirstName" id="inputFirstName">
       </div>
       <div class="col-md-4">
         <label for="inputMiddleName" class="form-label">Middle</label>
-        <input type="text" class="form-control" id="inputMiddleName">
+        <input type="text" maxlength="80" class="form-control" name="inputMiddleName" id="inputMiddleName">
       </div>
       <div class="col-md-4">
         <label for="inputLastName" class="form-label">Last</label>
-        <input type="text" class="form-control" id="inputLastName">
+        <input type="text" maxlength="80" class="form-control" name="inputLastName" id="inputLastName">
       </div>
       <p class="h5">Address</p>
       <div class="col-12">
         <label for="inputStreetAddress" class="form-label">Street Address</label>
-        <input type="text" class="form-control" id="inputStreetAdress">
+        <input type="text" maxlength="80" class="form-control" name="inputStreetAdress" id="inputStreetAdress">
       </div>
       <div class="col-12">
         <label for="inputAddress2" class="form-label">Address Line 2</label>
-        <input type="text" class="form-control" id="inputAddress2">
+        <input type="text" maxlength="80" class="form-control" name="inputAddress2" id="inputAddress2">
       </div>
       <div class="col-md-6">
         <label for="inputCity" class="form-label">City</label>
-        <input type="text" class="form-control" id="inputCity">
+        <input type="text" maxlength="80" class="form-control" name="inputCity" id="inputCity">
       </div>
       <div class="col-md-6">
         <label for="inputState" class="form-label">State/Province/Region</label>
-        <input type="text" class="form-control" id="inputState">
+        <input type="text" maxlength="80" class="form-control" name="inputState" id="inputState">
       </div>
       <div class="col-md-6">
         <label for="inputZip" class="form-label">Zip Code</label>
-        <input type="text" class="form-control" id="inputZip">
+        <input type="text" maxlength="80" class="form-control" name="inputZip" id="inputZip">
       </div>
       <div class="col-md-6">
         <label for="inputCountry" class="form-label">Country</label>
-        <select class="form-select bfh-countries" data-country="US" id="inputCountry">
+        <select class="form-select bfh-countries" data-country="US" name="inputCountry" id="inputCountry">
           <option value="US">United States</option>
           <option value="AF">Afghanistan</option>
           <option value="AL">Albania</option>
@@ -399,18 +399,18 @@
 
       <div class="col-md-6">
         <label for="inputPhone" class="form-label">Phone</label>
-        <input type="tel" class="form-control" id="inputPhone">
+        <input type="tel" class="form-control" name="inputPhone" id="inputPhone">
       </div>
 
       <div class="col-md-6">
         <label for="inputDependents" class="form-label">Number of dependants</label>
-        <input type="tel" class="form-control" id="inputDependents">
+        <input type="tel" class="form-control" name="inputDependents" id="inputDependents">
       </div>
 
 
       <div class="col-md-6">
         <label for="inputCountryCitizen" class="form-label">Country of Citizenship</label>
-        <select class="form-select bfh-countries" data-country="US" id="inputCitizen">
+        <select class="form-select bfh-countries" data-country="US" name="inputCitizen" id="inputCitizen">
           <option value="US">United States</option>
           <option value="AF">Afghanistan</option>
           <option value="AL">Albania</option>
@@ -659,7 +659,7 @@
 
       <div class="col-md-6">
         <label for="inputDOB" class="form-label">Date of Birth</label>
-        <input type="date" class="form-control" id="inputDOB">
+        <input type="date" class="form-control" name="inputDOB" id="inputDOB">
       </div>
       <hr>
 
@@ -670,14 +670,14 @@
         <br>
 
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadio1">
+          <input class="form-check-input" type="radio" value="graduated-high-school" name="flexRadioDefault" id="flexRadio1">
           <label class="form-check-label" for="flexRadio1">
             Yes
           </label>
         </div>
 
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadio2">
+          <input class="form-check-input" type="radio" value="did-not-graduate-high-school" name="flexRadioDefault" id="flexRadio2">
           <label class="form-check-label" for="flexRadio2">
             No
           </label>
@@ -687,76 +687,76 @@
 
       <div class="col-md-4">
         <label for="inputYears" class="form-label">Years attended</label>
-        <input type="text" class="form-control" id="inputYears">
+        <input type="text" maxlength="80" class="form-control" name="inputYears" id="inputYears">
       </div>
       <div class="col-md-4">
         <label for="inputGrad" class="form-label">Graduation Year</label>
-        <input type="text" class="form-control" id="inputGrad">
+        <input type="text" maxlength="80" class="form-control" name="inputGrad" id="inputGrad">
       </div>
       <div class="col-md-6">
         <label for="inputHighSchool" class="form-label">Name of High School</label>
-        <input type="text" class="form-control" id="inputHighSchool">
+        <input type="text" maxlength="80" class="form-control" name="inputHighSchool" id="inputHighSchool">
       </div>
       <div class="col-md-6">
         <label for="inputHighState" class="form-label">Country/State</label>
-        <input type="text" class="form-control" id="inputHighState">
+        <input type="text" maxlength="80" class="form-control" name="inputHighState" id="inputHighState">
       </div>
       <p class="fw-bold mt-5">College or institution of higher learning attended (leave blank if none):</p>
       <div class="col-12">
         <label for="CollegeName" class="form-label">Name</label>
-        <input type="text" class="form-control" id="CollegeName">
+        <input type="text" maxlength="80" class="form-control" name="CollegeName" id="CollegeName">
       </div>
       <div class="col-md-6">
         <label for="inputCollegeAddress" class="form-label">Address</label>
-        <input type="text" class="form-control" id="inputCollegeAddress">
+        <input type="text" maxlength="80" class="form-control" name="inputCollegeAddress" id="inputCollegeAddress">
       </div>
 
       <div class="col-md-6">
         <label for="inputYearsAttended" class="form-label">Years attended</label>
-        <input type="text" class="form-control" id="inputYearsAttended">
+        <input type="text" maxlength="80" class="form-control" name="inputYearsAttended" id="inputYearsAttended">
       </div>
 
 
       <div class="col-md-6">
         <label for="inputDegrees" class="form-label">Degrees, diplomas, or certificates received</label>
-        <input type="text" class="form-control" id="inputDegrees">
+        <input type="text" maxlength="80" class="form-control" name="inputDegrees" id="inputDegrees">
       </div>
       <div class="col-md-6">
         <label for="inputDegrees2" class="form-label">Degrees, diplomas, or certificates received (2)</label>
-        <input type="text" class="form-control" id="inputDegrees2">
+        <input type="text" maxlength="80" class="form-control" name="inputDegrees2" id="inputDegrees2">
       </div>
       <div class="col-12">
         <label for="inputSpecial" class="form-label">List any special training or work experience received in a related field.</label>
-        <textarea class="form-control" id="inputSpecial"></textarea>
+        <textarea class="form-control" name="inputSpecial" id="inputSpecial"></textarea>
       </div>
 
       <p class="fw-bold mt-5">College or institution of higher learning attended (2):</p>
       <div class="col-12">
         <label for="CollegeName2" class="form-label">Name</label>
-        <input type="text" class="form-control" id="CollegeName2">
+        <input type="text" maxlength="80" class="form-control" name="CollegeName2" id="CollegeName2">
       </div>
 
       <div class="col-md-6">
         <label for="inputCollegeAddress2" class="form-label">Address</label>
-        <input type="text" class="form-control" id="inputCollegeAddress2">
+        <input type="text" maxlength="80" class="form-control" name="inputCollegeAddress2" id="inputCollegeAddress2">
       </div>
 
       <div class="col-md-6">
         <label for="inputYearsAttended2" class="form-label">Years attended</label>
-        <input type="text" class="form-control" id="inputYearsAttended2">
+        <input type="text" maxlength="80" class="form-control" name="inputYearsAttended2" id="inputYearsAttended2">
       </div>
 
       <div class="col-md-6">
         <label for="inputDegrees2" class="form-label">Degrees, diplomas, or certificates received</label>
-        <input type="text" class="form-control" id="inputDegrees2">
+        <input type="text" maxlength="80" class="form-control" name="inputDegrees2" id="inputDegrees2">
       </div>
       <div class="col-md-6">
         <label for="inputDegrees3" class="form-label">Degrees, diplomas, or certificates received (2)</label>
-        <input type="text" class="form-control" id="inputDegrees3">
+        <input type="text" maxlength="80" class="form-control" name="inputDegrees3" id="inputDegrees3">
       </div>
       <div class="col-12">
         <label for="inputSpecial2" class="form-label">List any special training or work experience received in a related field.</label>
-        <textarea class="form-control" id="inputSpecial2"></textarea>
+        <textarea class="form-control" name="inputSpecial2" id="inputSpecial2"></textarea>
       </div>
       <hr>
 
@@ -766,31 +766,31 @@
       <p>If under 18 years of age, give the following information:</p>
       <div class="col-md-6">
         <label for="inputFatherName" class="form-label">Father's Name</label>
-        <input type="text" class="form-control" id="inputFatherName">
+        <input type="text" maxlength="80" class="form-control" name="inputFatherName" id="inputFatherName">
       </div>
       <div class="col-md-6">
         <label for="inputFatherPhone" class="form-label">Phone</label>
-        <input type="tel" class="form-control" id="inputFatherPhone">
+        <input type="tel" class="form-control" name="inputFatherPhone" id="inputFatherPhone">
       </div>
 
       <div class="col-12">
         <label for="inputFatherAddress" class="form-label">Address</label>
-        <input type="text" class="form-control" id="inputFatherAddress">
+        <input type="text" maxlength="80" class="form-control" name="inputFatherAddress" id="inputFatherAddress">
       </div>
 
 
       <div class="col-md-6">
         <label for="inputMotherName" class="form-label">Mother's Name</label>
-        <input type="text" class="form-control" id="inputMotherName">
+        <input type="text" maxlength="80" class="form-control" name="inputMotherName" id="inputMotherName">
       </div>
       <div class="col-md-6">
         <label for="inputMotherPhone" class="form-label">Phone</label>
-        <input type="tel" class="form-control" id="inputMotherPhone">
+        <input type="tel" class="form-control" name="inputMotherPhone" id="inputMotherPhone">
       </div>
 
       <div class="col-12">
         <label for="inputMotherAddress" class="form-label">Address</label>
-        <input type="text" class="form-control" id="inputMotherAddress">
+        <input type="text" maxlength="80" class="form-control" name="inputMotherAddress" id="inputMotherAddress">
       </div>
 
 
@@ -805,14 +805,14 @@
 
       <div class="col-12">
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDisableYes">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" value="yes-disability" id="flexRadioDisableYes">
           <label class="form-check-label" for="flexRadioDisableYes">
             Yes
           </label>
         </div>
 
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDisableNo">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" value="no-disability" id="flexRadioDisableNo">
           <label class="form-check-label" for="flexRadioDisableNo">
             No
           </label>
@@ -821,7 +821,7 @@
 
       <div class="col-12">
         <label for="inputDisableExplain" class="form-label">If so, please explain briefly</label>
-        <textarea class="form-control" id="inputDisableExplain"></textarea>
+        <textarea class="form-control" name="inputDisableExplain" id="inputDisableExplain"></textarea>
       </div>
 
 
@@ -831,19 +831,19 @@
 
       <div class="col-12">
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheckEpilepsy">
+          <input class="form-check-input" type="checkbox" value="Epilepsy" name="flexCheckEpilepsy" id="flexCheckEpilepsy">
           <label class="form-check-label" for="flexCheckEpilepsy">
-Epilepsy          </label>
+            Epilepsy </label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheckArthritis">
+          <input class="form-check-input" type="checkbox" value="Arthritis" name="flexCheckArthritis" id="flexCheckArthritis">
           <label class="form-check-label" for="flexCheckArthritis">
-Arthritis          </label>
+            Arthritis </label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheckRheumatism">
+          <input class="form-check-input" type="checkbox" value="Rheumatism" name="flexCheckRheumatism" id="flexCheckRheumatism">
           <label class="form-check-label" for="flexCheckRheumatism">
-Rheumatism          </label>
+            Rheumatism </label>
         </div>
       </div>
 
@@ -855,7 +855,7 @@ Rheumatism          </label>
 
       <div class="col-12">
         <label for="inputPSD" class="form-label">What is your projected starting date of attendance?</label>
-        <input type="date" class="form-control" id="inputPSD">
+        <input type="date" class="form-control" name="inputPSD" id="inputPSD">
       </div>
 
       <p class="h5">Requirements: </p>
@@ -877,12 +877,12 @@ Rheumatism          </label>
 
       <div class="col-12">
         <label for="formFile" class="form-label">Photograph 1</label>
-        <input class="form-control" type="file" id="formFile">
+        <input class="form-control" type="file" name="formFile" id="formFile">
       </div>
 
       <div class="col-12">
         <label for="formFile2" class="form-label">Photograph 2</label>
-        <input class="form-control" type="file" id="formFile2">
+        <input class="form-control" type="file" name="formFile2" id="formFile2">
       </div>
 
       <hr>
@@ -891,53 +891,49 @@ Rheumatism          </label>
 
       <div class="col-md-6">
         <label for="inputFirstSig" class="form-label">First</label>
-        <input type="text" class="form-control" id="inputFirstSig">
+        <input type="text" maxlength="80" class="form-control" name="inputFirstSig" id="inputFirstSig">
       </div>
 
       <div class="col-md-6">
         <label for="inputLastSig" class="form-label">Last</label>
-        <input type="text" class="form-control" id="inputLastSig">
+        <input type="text" maxlength="80" class="form-control" name="inputLastSig" id="inputLastSig">
       </div>
 
       <div class="col-6">
         <label for="inputDateSig" class="form-label">Date</label>
-        <input type="text" class="form-control" id="inputDateSig">
+        <input type="text" maxlength="80" class="form-control" name="inputDateSig" id="inputDateSig">
       </div>
 
-      <div class="col-12 text-center">
-        <button type="submit" class="w-25 btn btn-large btn-dark">Submit</button>
 
-      </div>
 
       <p class="h5">Applicant Signature</p>
 
       <div class="col-md-6">
         <label for="inputFirstSig" class="form-label">First</label>
-        <input type="text" class="form-control" id="inputFirstSig">
+        <input type="text" maxlength="80" class="form-control" name="inputFirstSigSelf" id="inputFirstSigSelf">
       </div>
 
       <div class="col-md-6">
         <label for="inputLastSig" class="form-label">Last</label>
-        <input type="text" class="form-control" id="inputLastSig">
+        <input type="text" maxlength="80" class="form-control" name="inputLastSelf" id="inputLastSelf">
       </div>
 
       <div class="col-6">
         <label for="inputDateSig" class="form-label">Date</label>
-        <input type="text" class="form-control" id="inputDateSig">
+        <input type="text" maxlength="80" class="form-control" name="inputDateSelf" id="inputDateSelf">
       </div>
 
       <div class="col-12 text-center">
         <button type="submit" class="w-25 btn btn-large btn-dark">Submit</button>
 
       </div>
-
-
-
-
-
-
     </form>
-  </div>
+
+
+
+
+
+
 
   </div>
 
@@ -966,7 +962,7 @@ Rheumatism          </label>
         </div>
         <div class="col-sm-4">
           <p class="h6">CONTACT</p>
-        <p>U.S. PHONE: <a href="tel:1-800-831-8470">1-800-831-8470</a>
+          <p>U.S. PHONE: <a href="tel:1-800-831-8470">1-800-831-8470</a>
             <br>
             International Phone: <a href="tel:(954) 574-0833">(954) 574-0833</a>
             <br>
@@ -985,8 +981,8 @@ Rheumatism          </label>
       <li class="nav-item"><a href="/directions/directions.html" class="nav-link px-2 text-muted">Directions</a></li>
       <li class="nav-item"><a href="/hotels/hotels.html" class="nav-link px-2 text-muted">Hotel</a></li>
       <li class="nav-item"><a href="/contact/contact.html" class="nav-link px-2 text-muted">Contact</a></li>
-<li class="nav-item"><a href="https://www.facebook.com/American-Institute-of-Diamond-Cutting-Inc-125515124193327" class="nav-link px-2 text-muted"><img src="/images/facebook.svg" alt="facebook link"></a></li>
-<li class="nav-item"><a href="https://www.linkedin.com/pub/nizam-peters/28/a57/504" class="nav-link px-2 text-muted"><img src="/images/linkedin.svg" alt="linkedin link"></a></li>
+      <li class="nav-item"><a href="https://www.facebook.com/American-Institute-of-Diamond-Cutting-Inc-125515124193327" class="nav-link px-2 text-muted"><img src="/images/facebook.svg" alt="facebook link"></a></li>
+      <li class="nav-item"><a href="https://www.linkedin.com/pub/nizam-peters/28/a57/504" class="nav-link px-2 text-muted"><img src="/images/linkedin.svg" alt="linkedin link"></a></li>
 
 
 
